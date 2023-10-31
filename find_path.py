@@ -37,6 +37,6 @@ big_dict = {
     }
 }
 
-example_1 = "alix"    # output: ["name"]["other"][0]
-example_2 = "johns"   # output: ["name"]["peter"]
-example_1 = "george"  # output: ["name"]["other"][1]
+find_path(big_dict, "alix")    # output: ["name"]["other"][0]
+find_path(big_dict, "johns")   # output: ["name"]["peter"]
+find_path(big_dict, "george")  # output: ["name"]["other"][1]
