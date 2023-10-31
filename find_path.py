@@ -1,5 +1,11 @@
 #!/usr/bin/env python3
 
+# This function is able to find a certain piece of data in a big list/dict.
+# For example, if you have a big json file and want to know how to access a certain value,
+# if you know the value, you just need to pass the json object to the function and
+# the value you're searching for. You can update the condition for the value,
+# in case you're searching for a certain type of data or just anything.
+
 
 def find_path(obj, term):
     path = ""
@@ -20,8 +26,16 @@ def find_path(obj, term):
     else:
         return None
 
-big_dict = {} # can be a list too
-term_searched = "your term" # can be any type of value except list or dict, update the script for your needs.
+big_dict = {
+    "name": {
+        "peter": "johns",
+        "other": [
+            "alix",
+            "george"
+        ]
+    }
+}
 
-
-find_path(big_dict, term_searched)
+example_1 = "alix"    # output: ["name"]["other"][0]
+example_2 = "johns"   # output: ["name"]["peter"]
+example_1 = "george"  # output: ["name"]["other"][1]
