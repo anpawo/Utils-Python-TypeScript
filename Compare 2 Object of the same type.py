@@ -21,3 +21,10 @@ class Pokemon:
                     return False
             return True
         return False
+
+
+pikachu = Pokemon("Pikachu", 100, 55, 40, 90)
+raichu = Pokemon("Raichu", 100, 85, 50, 110)
+
+print(pikachu == raichu)    # output: False
+print(pikachu == pikachu)   # output: True
