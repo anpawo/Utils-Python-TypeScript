@@ -21,7 +21,7 @@ def find_path(obj, term):
         return None
 
 big_dict = {} # can be a list too
-term_searched = "your term" # can be any type of value
+term_searched = "your term" # can be any type of value except list or dict, update the script for your needs.
 
 
 find_path(big_dict, term_searched)
