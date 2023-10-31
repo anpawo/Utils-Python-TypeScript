@@ -2,12 +2,13 @@
 
 # This function is able to find a certain piece of data in a big list/dict.
 # For example, if you have a big json file and want to know how to access a certain value,
-# if you know the value, you just need to pass the json object to the function and
-# the value you're searching for. You can update the condition for the value,
-# in case you're searching for a certain type of data or just anything.
+# if you know the value, you just need to pass the json object as a python object to the function
+# and the value you're searching for.
+
+# You can update the condition for the value, in case you're searching for a certain type of data or just anything.
 
 
-def find_path(obj, term):
+def find_path(obj, term) -> str | None:
     path = ""
     if isinstance(obj, dict):
         for key in obj:
